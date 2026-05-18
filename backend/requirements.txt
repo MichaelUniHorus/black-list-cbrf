@@ -6,11 +6,8 @@ python-multipart==0.0.6
 # Database
 sqlalchemy==2.0.25
 alembic==1.13.1
-# PostgreSQL драйвер (ОПЦИОНАЛЬНО - только для production с PostgreSQL)
-# Для разработки используется SQLite (встроен в Python, драйвер не нужен)
-# Раскомментируйте одну из строк ниже только если планируете использовать PostgreSQL:
-# psycopg2-binary==2.9.6
-# psycopg[binary]==3.1.18
+# PostgreSQL драйвер
+psycopg2-binary==2.9.6
 
 # Pydantic
 pydantic==2.5.3
