@@ -45,6 +45,7 @@ services:
       context: ./frontend
       args:
         VITE_API_URL: https://mikesdemos.ru/black-list/api
+        VITE_BASE_URL: /black-list/
     ports:
       - "3000:80"
     depends_on:

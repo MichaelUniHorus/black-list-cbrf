@@ -5,8 +5,11 @@ import StatsPage from './pages/StatsPage'
 import Layout from './components/Layout'
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL ?? '/'
+  const basename = baseUrl === '/' ? '/' : baseUrl.replace(/\/$/, '')
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<ModernMapPage />} />
