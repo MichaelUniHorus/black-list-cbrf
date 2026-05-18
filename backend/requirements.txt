@@ -1,0 +1,39 @@
+# FastAPI
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.25
+alembic==1.13.1
+# PostgreSQL драйвер (ОПЦИОНАЛЬНО - только для production с PostgreSQL)
+# Для разработки используется SQLite (встроен в Python, драйвер не нужен)
+# Раскомментируйте одну из строк ниже только если планируете использовать PostgreSQL:
+# psycopg2-binary==2.9.6
+# psycopg[binary]==3.1.18
+
+# Pydantic
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Celery
+celery==5.3.6
+redis==5.0.1
+flower==2.0.1
+
+# HTTP Client
+httpx==0.26.0
+aiohttp==3.9.1
+
+# Environment
+python-dotenv==1.0.0
+
+# Security (optional, для будущего)
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Utilities
+python-dateutil==2.8.2
+
+# Logging (опционально для production)
+# gunicorn==21.2.0  # для production вместо uvicorn
